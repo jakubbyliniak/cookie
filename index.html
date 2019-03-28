@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Fun</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    
+    
+
+    <link rel="stylesheet" type="text/css" href="./viewscroller/viewScroller.min.css">  
+    <link rel="stylesheet" type="text/css" href="custom.css">
+
+
+    
+</head>
+<body>
+
+        <div id="scroll-up" class="scroll">
+                <div id="but_up"class="btn-scroll vs-mainview-prev"><i class="fas fa-chevron-circle-up"></i></div>
+        </div>
+        
+        <div id="scroll-down" class="scroll">
+                <div id="but_down" class="btn-scroll vs-mainview-next"><i class="fas fa-chevron-circle-down"></i></div>
+        </div>
+
+<div class="menu">
+        <div class="buttons section fxd">
+                <button id="hidePanel" class="btn-own btn-own-hidepanel raised center">&lt;&lt;</button>
+        </div>
+
+        <div class="buttons-section">
+                <a href="#1" class="vs-anchor"><button class="btn-own btn-own-changeview raised center">Start</button></a>
+        </div>
+
+        <div class="buttons-section">
+                <a href="#2" class="vs-anchor"><button class="btn-own btn-own-changeview raised center">O Nas</button></a>
+        </div>
+
+        <div class="buttons-section">
+                <a href="#3" class="vs-anchor"><button class="btn-own btn-own-changeview raised center">Usługi</button></a>
+        </div>
+</div>
+
+
+<div class="mainbag">
+        <div vs-anchor="1" class="mainview container white ">
+
+                <video autoplay muted loop id="myVideo">
+                        <source src="./img/forest.mp4" type="video/mp4">
+                </video>
+                <div class="inner-container">
+                        <h1>Cośtam cośtam</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta maxime quisquam
+                                facilis libero molestiae voluptatem inventore, architecto tempora neque dolores
+                                 repellat repudiandae quam? Autem delectus odio culpa facilis, ipsam consectetur?</p>
+                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta maxime quisquam
+                                                facilis libero molestiae voluptatem inventore, architecto tempora neque dolores
+                                                 repellat repudiandae quam? Autem delectus odio culpa facilis, ipsam consectetur?</p>
+                                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta maxime quisquam
+                                                                facilis libero molestiae voluptatem inventore, architecto tempora neque dolores
+                                                                 repellat repudiandae quam? Autem delectus odio culpa facilis, ipsam consectetur?</p>
+
+                </div>
+        </div>
+
+        <div vs-anchor="2" class="mainview container white ">
+
+                <video autoplay muted loop id="myVideo">
+                        <source src="./img/forest.mp4" type="video/mp4">
+                </video>
+
+                <div class="header">
+                        <div class="header__text text-black">
+                                Awesome
+                        </div>
+                        <div class="header__description text-black">
+                                these buttons does not do much, they just are... to shine nicely
+                        </div>                   
+                </div>
+        
+                
+        </div>
+
+        <div vs-anchor="3" class="mainview container white bg-full-1">
+                <div class="header">
+                        <div class="header__text text-black">
+                                Awesome
+                        </div>
+                        <div class="header__description text-black">
+                                these buttons does not do much, they just are... to shine nicely
+                        </div>
+                </div>
+
+               
+
+                
+
+                
+        </div>
+
+        <div vs-anchor="4" class="mainview  ">
+                        <div class="vs-center-wrap">
+                                        <div class="vs-center">
+                                                <div class="pos">
+                                                        <div value="Previous subview" class="subnav subnav-left vs-subview-prev"><i class="fas fa-chevron-circle-left"></i></div>
+                                                        
+                                                        <div value="Next subview" class="subnav subnav-right vs-subview-next"><i class="fas fa-chevron-circle-right"></i></div>
+                                                </div>
+                                        </div>
+                                        
+                                </div>
+                <div class="subbag">
+			<div vs-anchor="firstsubview-1" class="subview white bg-full-1">
+                                <div class="sheader">
+                                        <div class="header__text text-black">
+                                                Awesome
+                                        </div>
+                                        <div class="header__description text-black">
+                                                these buttons does not do much, they just are... to shine nicely
+                                        </div>
+                                </div>
+                
+                                
+                        </div>
+			<div vs-anchor="secondsubview-1" class="subview white">
+                                <div class="sheader">
+                                        <div class="header__text text-black">
+                                                Awesome
+                                        </div>
+                                        <div class="header__description text-black">
+                                                these buttons does not do much, they just are... to shine nicely
+                                        </div>
+                                </div>
+                
+                                <img class="about-person" src="./img/one-person-company.png" alt="">
+                        </div>
+			<div vs-anchor="thirdsubview-1" class="subview white bg-full-3">
+                                
+                        </div>
+		</div>
+                
+
+                
+
+                
+        </div>
+
+        <div vs-anchor="5" class="mainview container white bg-transparent">
+                        <div class="vs-center-wrap">
+                                        <div class="vs-center">
+                                                <div class="pos">
+                                                                <div value="Previous subview" class="subnav subnav-left vs-subview-prev"><i class="fas fa-chevron-circle-left"></i></div>
+                                                                
+                                                                <div value="Next subview" class="subnav subnav-right vs-subview-next"><i class="fas fa-chevron-circle-right"></i></div>
+                                                </div>
+                                        </div>
+                                        
+                                </div>
+                        
+                <div class="subbag">
+                                
+                        <div vs-anchor="firstsubview-2" class="subview">
+                                <video autoplay muted loop id="myVideo">
+                                        <source src="./img/pencil_down.webm" type="video/webm">
+                                </video>
+                                <!--<div class="mask"></div>-->
+                                                      
+                                <div class="header">
+                                        <div class="header__text text-black">
+                                                Awesome
+                                        </div>
+                                        <div class="header__description text-black">
+                                                these buttons does not do much, they just are... to shine nicely
+                                        </div>
+                                </div>
+                
+                                
+                        </div>
+			<div vs-anchor="secondsubview-2" class="subview">
+                                <video autoplay muted loop id="myVideo">
+                                        <source src="./img/Sony-cam.webm" type="video/webm">
+                                </video>
+                                <!--<div class="mask"></div>-->
+                                                      
+                                <div class="header">
+                                        <div class="header__text text-black">
+                                                Awesome
+                                        </div>
+                                        <div class="header__description text-black">
+                                                look at these sliding pages, how nice they are
+                                        </div>
+                                </div>
+                
+                                
+                        </div>
+			<div vs-anchor="thirdsubview-2" class="subview">
+                                <video autoplay muted loop id="myVideo">
+                                        <source src="./img/Designer.mp4" type="video/mp4">
+                                </video>
+                                <!--<div class="mask"></div>-->
+                                                      
+                                <div class="header">
+                                        <div class="header__text text-white">
+                                                Awesome
+                                        </div>
+                                        <div class="header__description text-white">
+                                                
+                                        </div>
+                                </div>
+                
+                                
+                        </div>
+                </div>
+        </div>
+
+        <div vs-anchor="6" class="mainview container white bg-transparent">
+                        <video autoplay muted loop id="myVideo">
+                                <source src="./img/Gas-from-Ground.mp4" type="video/mp4">
+                        </video>
+                        <div class="mask"></div>
+                                              
+                        <div class="header">
+                                <div class="header__text text-black">
+                                        Awesome
+                                </div>
+                                <div class="header__description text-black">
+                                        these buttons does not do much, they just are... to shine nicely
+                                </div>
+                        </div>
+        
+                        
+                </div>
+
+
+        <div vs-anchor="7" class="mainview container black ">
+       
+                <div class="header">
+                        <div class="header__text text-white">
+                                Awesome
+                        </div>
+                        <div class="header__description text-white">
+                                these buttons does not do much, they just are... to shine nicely
+                        </div>
+                
+        </div>
+
+        
+
+</div>
+</div>
+
+<script src="./viewscroller/jquery-3.1.0.min.js"></script>
+<script src="./viewscroller/jquery.easing.min.js"></script>
+<script src="./viewscroller/jquery.mousewheel.min.js"></script>
+<script src="./viewscroller/viewScroller.js"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>

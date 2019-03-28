@@ -1,0 +1,30 @@
+.menu{
+    position: fixed;
+    margin-top: 50px;
+    font-family: Arial, Tahoma;
+    font-size: 13px;
+    z-index: 10;
+    left: 20px;
+}
+
+
+.buttons-section-fxd {
+    position: fixed;
+    top: 10px;
+    height: 20px;
+}
+
+.buttons-section{
+    height: 31px;
+    position: relative;
+}
+
+.btn-own {
+    padding: 10px 20px;
+    border: 0 none;
+    border-radius: 6px;
+    font-family: Arial, Tahoma;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
