@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CSS Fun</title>
+    <title>Cookies</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     
@@ -52,56 +52,113 @@
                         <source src="./img/forest.mp4" type="video/mp4">
                 </video>
                 <div class="inner-container">
-                        <h1>Cośtam cośtam</h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta maxime quisquam
-                                facilis libero molestiae voluptatem inventore, architecto tempora neque dolores
-                                 repellat repudiandae quam? Autem delectus odio culpa facilis, ipsam consectetur?</p>
-                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta maxime quisquam
-                                                facilis libero molestiae voluptatem inventore, architecto tempora neque dolores
-                                                 repellat repudiandae quam? Autem delectus odio culpa facilis, ipsam consectetur?</p>
-                                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta maxime quisquam
-                                                                facilis libero molestiae voluptatem inventore, architecto tempora neque dolores
-                                                                 repellat repudiandae quam? Autem delectus odio culpa facilis, ipsam consectetur?</p>
+                        <h1>This is a place for a welcome page</h1>
+                        <p>This needs further styling. This page should be an eyecatcher. Something that will drag attention. 
+                                Background video is optional but can be added if will help to achieve the goal </p>
+                        <p>Left navigation will be improved and js driven. Need to consider if this should occupy it's own container
+                                or should be placed on top of current view </p>
+                        <p>We need to think where to put logo, I was thinking about the fixed position left,top, above the navigation </p>
 
                 </div>
         </div>
 
         <div vs-anchor="2" class="mainview container white ">
-
-                <video autoplay muted loop id="myVideo">
-                        <source src="./img/forest.mp4" type="video/mp4">
-                </video>
-
-                <div class="header">
-                        <div class="header__text text-black">
-                                Awesome
+                        <div class="vs-center-wrap">
+                                <div class="vs-center">
+                                        <div class="pos">
+                                                <div value="Previous subview" class="subnav subnav-left vs-subview-prev"><i class="fas fa-chevron-circle-left"></i></div>
+                                                
+                                                <div value="Next subview" class="subnav subnav-right vs-subview-next"><i class="fas fa-chevron-circle-right"></i></div>
+                                        </div>
+                                </div>
+                                
                         </div>
-                        <div class="header__description text-black">
-                                these buttons does not do much, they just are... to shine nicely
-                        </div>                   
-                </div>
+
+                        <div class="subbag">
+                                <div vs-anchor="about1" class="subview white">
+                                        <div class="sheader">
+                                                <div class="header__text text-black">
+                                                        About us first page placeholder
+                                                </div>
+                                                <div class="header__description text-black">
+                                                        I was thinking about putting some people images here like on this example + some text, probably similar to what they have on the current page. There are two company owners.
+                                                        We could put one on the left second on the right and the text on the middle.
+                                                </div>
+                                        
+                                        </div>
+                                        <img class="about-person" src="./img/one-person-company.png" alt="">
+                                </div>
+
+                                <div vs-anchor="about2" class="subview white">
+                                                <div class="sheader">
+                                                        <div class="header__text text-black">
+                                                                About us second page placeholder
+                                                        </div>
+                                                        <div class="header__description text-black">
+                                                                here we would put "They write about us" + some references to the articles published about them
+                                                        </div>
+                                                
+                                                </div>
         
-                
+                                </div>
+                        </div>
         </div>
 
-        <div vs-anchor="3" class="mainview container white bg-full-1">
-                <div class="header">
-                        <div class="header__text text-black">
-                                Awesome
+        <div vs-anchor="3" class="mainview container white">
+
+                <div class="vs-center-wrap">
+                                <div class="vs-center">
+                                        <div class="pos">
+                                                <div value="Previous subview" class="subnav subnav-left vs-subview-prev"><i class="fas fa-chevron-circle-left"></i></div>
+                                                
+                                                <div value="Next subview" class="subnav subnav-right vs-subview-next"><i class="fas fa-chevron-circle-right"></i></div>
+                                        </div>
+                                </div>
+                                
                         </div>
-                        <div class="header__description text-black">
-                                these buttons does not do much, they just are... to shine nicely
+
+                        <div class="subbag">
+                                <div vs-anchor="services1" class="subview white">
+                                        <div class="sheader">
+                                                <div class="header__text text-black">
+                                                                Services page 1 placeholder - EVENT SERVICES
+                                                </div>
+                                                <div class="header__description text-black">
+                                                        First services page, they have 3 of them. Here we put Event service. We need to include some text and I think about putting here some kind of slider or gallery that
+                                                        would show some recent event photos 
+                                                </div>
+                                        
+                                        </div>
+                                </div>
+
+                                <div vs-anchor="services2" class="subview white">
+                                                <div class="sheader">
+                                                        <div class="header__text text-black">
+                                                                Services page 2 placeholder - PRINTING
+                                                        </div>
+                                                        <div class="header__description text-black">
+                                                                As previous, maybe not a slider or gallery but some example projects as images put on the page. Alternativly we can show working machine as a beckground image.
+                                                        </div>
+                                                
+                                                </div>
+        
+                                </div>
+                                <div vs-anchor="services3" class="subview white">
+                                                <div class="sheader">
+                                                        <div class="header__text text-black">
+                                                                        Services page 3 placeholder - ADVERTISEMENT
+                                                        </div>
+                                                        <div class="header__description text-black">
+                                                                Again some text + images on the page. If we show the printing machine on the previous page we could use some example adverts they produced on this page
+                                                        </div>
+                                                
+                                                </div>
+        
+                                </div>
                         </div>
-                </div>
-
-               
-
-                
-
-                
         </div>
 
-        <div vs-anchor="4" class="mainview  ">
+        <div vs-anchor="4" class="mainview container ">
                         <div class="vs-center-wrap">
                                         <div class="vs-center">
                                                 <div class="pos">
@@ -112,140 +169,58 @@
                                         </div>
                                         
                                 </div>
-                <div class="subbag">
-			<div vs-anchor="firstsubview-1" class="subview white bg-full-1">
-                                <div class="sheader">
-                                        <div class="header__text text-black">
-                                                Awesome
+        
+                                <div class="subbag">
+                                        <div vs-anchor="protfolio1" class="subview white">
+                                                <div class="sheader">
+                                                        <div class="header__text text-black">
+                                                                        Some example projects, short text + gallery, slider, images
+                                                        </div>
+                                                        <div class="header__description text-black">
+                                                                We can put some example projects they did. A little bit more the in the offer section. We can put some videos from the events(if available), some galleries (like on their facebook), maybe in slider
+                                                        </div>
+                                                
+                                                </div>
                                         </div>
-                                        <div class="header__description text-black">
-                                                these buttons does not do much, they just are... to shine nicely
+        
+                                        <div vs-anchor="protfolio2" class="subview white">
+                                                        <div class="sheader">
+                                                                <div class="header__text text-black">
+                                                                                Some example projects, short text + gallery, slider, images
+                                                                </div>
+                                                                <div class="header__description text-black">
+                                                                                We can put some example projects they did. A little bit more the in the offer section. We can put some videos from the events(if available), some galleries (like on their facebook), maybe in slider
+                                                                </div>
+                                                        
+                                                        </div>
+                
+                                        </div>
+                                        <div vs-anchor="protfolio3" class="subview white">
+                                                        <div class="sheader">
+                                                                <div class="header__text text-black">
+                                                                                Some example projects, short text + gallery, slider, images
+                                                                </div>
+                                                                <div class="header__description text-black">
+                                                                                We can put some example projects they did. A little bit more the in the offer section. We can put some videos from the events(if available), some galleries (like on their facebook), maybe in slider
+                                                                </div>
+                                                        
+                                                        </div>
+                
                                         </div>
                                 </div>
-                
-                                
-                        </div>
-			<div vs-anchor="secondsubview-1" class="subview white">
-                                <div class="sheader">
-                                        <div class="header__text text-black">
-                                                Awesome
-                                        </div>
-                                        <div class="header__description text-black">
-                                                these buttons does not do much, they just are... to shine nicely
-                                        </div>
-                                </div>
-                
-                                <img class="about-person" src="./img/one-person-company.png" alt="">
-                        </div>
-			<div vs-anchor="thirdsubview-1" class="subview white bg-full-3">
-                                
-                        </div>
-		</div>
-                
-
-                
 
                 
         </div>
 
         <div vs-anchor="5" class="mainview container white bg-transparent">
-                        <div class="vs-center-wrap">
-                                        <div class="vs-center">
-                                                <div class="pos">
-                                                                <div value="Previous subview" class="subnav subnav-left vs-subview-prev"><i class="fas fa-chevron-circle-left"></i></div>
-                                                                
-                                                                <div value="Next subview" class="subnav subnav-right vs-subview-next"><i class="fas fa-chevron-circle-right"></i></div>
-                                                </div>
-                                        </div>
-                                        
-                                </div>
-                        
-                <div class="subbag">
-                                
-                        <div vs-anchor="firstsubview-2" class="subview">
-                                <video autoplay muted loop id="myVideo">
-                                        <source src="./img/pencil_down.webm" type="video/webm">
-                                </video>
-                                <!--<div class="mask"></div>-->
-                                                      
-                                <div class="sheader">
-                                        <div class="header__text text-black">
-                                                Awesome
-                                        </div>
-                                        <div class="header__description text-black">
-                                                these buttons does not do much, they just are... to shine nicely
-                                        </div>
-                                </div>
+                        <div class="inner-container">
+                                        <h1>Contact page placeholder</h1>
+                                        <p>We can put the contact information here as well as a contact form. Maybe some styled google map. Alternatively we can put the contact form as a modal launched by the button</p>
                 
-                                
-                        </div>
-			<div vs-anchor="secondsubview-2" class="subview">
-                                <video autoplay muted loop id="myVideo">
-                                        <source src="./img/Sony-cam.webm" type="video/webm">
-                                </video>
-                                <!--<div class="mask"></div>-->
-                                                      
-                                <div class="sheader">
-                                        <div class="header__text text-black">
-                                                Awesome
-                                        </div>
-                                        <div class="header__description text-black">
-                                                look at these sliding pages, how nice they are
-                                        </div>
                                 </div>
-                
-                                
-                        </div>
-			<div vs-anchor="thirdsubview-2" class="subview">
-                                <video autoplay muted loop id="myVideo">
-                                        <source src="./img/Designer.mp4" type="video/mp4">
-                                </video>
-                                <!--<div class="mask"></div>-->
-                                                      
-                                <div class="sheader">
-                                        <div class="header__text text-white">
-                                                Awesome
-                                        </div>
-                                        <div class="header__description text-white">
-                                                
-                                        </div>
-                                </div>
-                
-                                
-                        </div>
-                </div>
         </div>
 
-        <div vs-anchor="6" class="mainview container white bg-transparent">
-                        <video autoplay muted loop id="myVideo">
-                                <source src="./img/Gas-from-Ground.mp4" type="video/mp4">
-                        </video>
-                        <div class="mask"></div>
-                                              
-                        <div class="header">
-                                <div class="header__text text-black">
-                                        Awesome
-                                </div>
-                                <div class="header__description text-black">
-                                        these buttons does not do much, they just are... to shine nicely
-                                </div>
-                        </div>
         
-                        
-                </div>
-
-
-        <div vs-anchor="7" class="mainview container black ">
-       
-                <div class="header">
-                        <div class="header__text text-white">
-                                Awesome
-                        </div>
-                        <div class="header__description text-white">
-                                these buttons does not do much, they just are... to shine nicely
-                        </div>
-                
-        </div>
 
         
 
