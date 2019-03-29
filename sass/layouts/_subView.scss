@@ -1,0 +1,36 @@
+
+
+.scontainer{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    height: 80%;
+    max-width: 60%;
+    transform: translate(-50%, 0%);
+    
+}
+
+.sheader{
+    text-align: center;
+    &__text{
+        font-size: 50px;
+        line-height: 80px;
+        margin: 30px 0;
+        border-bottom: 2px solid red;
+    }
+    &__description{
+        font-size: 30px;
+        line-height: 50px;
+    }
+}
+
+.scontent{
+    
+    &__text{
+        margin-top: 2em;
+        line-height: 1.6em;
+
+    }
+
+}
+

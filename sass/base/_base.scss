@@ -7,14 +7,19 @@
 }
 
 html { height: 100%; }
-body { min-height: 100%; }
+body { min-height: 100%;}
 .vs-center-wrap{
     position: absolute;
     z-index: 100;
 }
+.event-image{
+    width: 50%;
+    margin: 10px auto;
+}
 
 html{
     font-family: Montserrat;
+    /*background-color: #f4f4f4;*/
 }
 
 .scroll{
@@ -27,7 +32,7 @@ html{
     height: 50px;
     width: 70px;
     font-size: 3em;
-    color: #fff;
+    color: red;
     cursor: pointer;
     //background-color: red;
 
@@ -42,20 +47,26 @@ html{
     position: absolute;
     left: 50px;
     top: 50vh;
-    text-shadow: 2px 0px #fff;
+    text-shadow: 2px 0px red;
 }
 
 .subnav-right{
     position: absolute;
     right: 50px;
     top: 50vh;
-    text-shadow: -2px 0px #fff;
+    text-shadow: -2px 0px red;
 }
 
 .about-person{
     position: absolute;
-    bottom: 0;
+    bottom: 0;    
+}
+.left-person{
     right: 150px;
+}
+
+.right-person{
+    left: 150px;
 }
 
 
@@ -91,19 +102,13 @@ html{
     flex-direction: row;
     align-items: center;
 }
-.sheader{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
+
 
 .inner-container{
     //background-color: #afafa5;
     height: 80%;
     width: 80%;
-    border: 1px solid #efb70e;
+   
     border-radius: 5px;
 }
 
@@ -150,10 +155,7 @@ html{
 .header, .sheader{
     text-align: center;
     
-    &__text{
-        font-size: 40px;
-	    line-height: 80px;
-    }
+    
 
     &__description{
         font-size: 10px;

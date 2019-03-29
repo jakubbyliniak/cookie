@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    $('.carousel').slick();
+    
     $('.mainbag').viewScroller({
         
         afterChange: function() { 
@@ -57,5 +59,14 @@ $(document).ready(function () {
     })
     //console.log(x);
     console.log(idmain);
+
+    $('#hidePanel').click(function(){
+        var toHide = $('.btn-own-changeview');
+        if(toHide.first().css("display") !== "none"){
+            toHide.fadeOut();
+        } else {
+            toHide.fadeIn();
+        }
+    });
 
 });

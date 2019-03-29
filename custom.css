@@ -15,8 +15,13 @@ body {
   position: absolute;
   z-index: 100; }
 
+.event-image {
+  width: 50%;
+  margin: 10px auto; }
+
 html {
-  font-family: Montserrat; }
+  font-family: Montserrat;
+  /*background-color: #f4f4f4;*/ }
 
 .scroll {
   z-index: 100;
@@ -26,7 +31,7 @@ html {
   height: 50px;
   width: 70px;
   font-size: 3em;
-  color: #fff;
+  color: red;
   cursor: pointer; }
 
 .subnav {
@@ -38,18 +43,23 @@ html {
   position: absolute;
   left: 50px;
   top: 50vh;
-  text-shadow: 2px 0px #fff; }
+  text-shadow: 2px 0px red; }
 
 .subnav-right {
   position: absolute;
   right: 50px;
   top: 50vh;
-  text-shadow: -2px 0px #fff; }
+  text-shadow: -2px 0px red; }
 
 .about-person {
   position: absolute;
-  bottom: 0;
+  bottom: 0; }
+
+.left-person {
   right: 150px; }
+
+.right-person {
+  left: 150px; }
 
 #scroll-up {
   top: 20px;
@@ -76,17 +86,9 @@ html {
   flex-direction: row;
   align-items: center; }
 
-.sheader {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
-
 .inner-container {
   height: 80%;
   width: 80%;
-  border: 1px solid #efb70e;
   border-radius: 5px; }
 
 .bg-full-1 {
@@ -123,9 +125,6 @@ html {
 
 .header, .sheader {
   text-align: center; }
-  .header__text, .sheader__text {
-    font-size: 40px;
-    line-height: 80px; }
   .header__description, .sheader__description {
     font-size: 10px; }
 
@@ -150,6 +149,13 @@ html {
 .rounded-border {
   border: 3px solid #fff;
   border-radius: 5px; }
+
+.background {
+  background-color: #f4f4f4; }
+
+.background-transparent {
+  background-color: #f4f4f4;
+  opacity: .2; }
 
 .icons-container {
   display: flex;
@@ -198,7 +204,7 @@ html {
       .icon-list li a .fas {
         text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         transition: .5s;
-        color: #fff;
+        color: red;
         transform: scale(0.8);
         opacity: .2; }
     .icon-list li:hover:before {
@@ -274,11 +280,10 @@ html {
 
 .menu {
   position: fixed;
-  margin-top: 50px;
-  font-family: Arial, Tahoma;
+  margin-top: 20px;
   font-size: 13px;
   z-index: 10;
-  left: 20px; }
+  left: 30px; }
 
 .buttons-section-fxd {
   position: fixed;
@@ -287,13 +292,40 @@ html {
 
 .buttons-section {
   height: 31px;
-  position: relative; }
+  position: relative;
+  display: flex;
+  flex-direction: column; }
 
 .btn-own {
-  padding: 10px 20px;
+  padding: 20px 20px;
   border: 0 none;
   border-radius: 6px;
-  font-family: Arial, Tahoma;
+  font-family: Montserrat;
   font-weight: bold;
   letter-spacing: 1px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: red;
+  background: none; }
+
+.scontainer {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  height: 80%;
+  max-width: 60%;
+  transform: translate(-50%, 0%); }
+
+.sheader {
+  text-align: center; }
+  .sheader__text {
+    font-size: 50px;
+    line-height: 80px;
+    margin: 30px 0;
+    border-bottom: 2px solid red; }
+  .sheader__description {
+    font-size: 30px;
+    line-height: 50px; }
+
+.scontent__text {
+  margin-top: 2em;
+  line-height: 1.6em; }

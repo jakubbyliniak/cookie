@@ -11,6 +11,11 @@
     
 
     <link rel="stylesheet" type="text/css" href="./viewscroller/viewScroller.min.css">  
+    <!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="./node_modules/slick-carousel/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="./node_modules/slick-carousel/slick/slick-theme.css"/>
+
     <link rel="stylesheet" type="text/css" href="custom.css">
 
 
@@ -28,20 +33,18 @@
 
 <div class="menu">
         <div class="buttons section fxd">
-                <button id="hidePanel" class="btn-own btn-own-hidepanel raised center">&lt;&lt;</button>
+                <button id="hidePanel" class="btn-own btn-own-hidepanel">&lt;&lt;</button>
+        </div>
+        
+        <div class="buttons-section">
+                <a href="#1" class="vs-anchor"><button class="btn-own btn-own-changeview">Start</button></a>
+                <a href="#2" class="vs-anchor"><button class="btn-own btn-own-changeview">O Nas</button></a>
+                <a href="#3" class="vs-anchor"><button class="btn-own btn-own-changeview">Usługi</button></a>
+                <a href="#4" class="vs-anchor"><button class="btn-own btn-own-changeview">Projekty</button></a>
+                <a href="#5" class="vs-anchor"><button class="btn-own btn-own-changeview">Kontakt</button></a>
         </div>
 
-        <div class="buttons-section">
-                <a href="#1" class="vs-anchor"><button class="btn-own btn-own-changeview raised center">Start</button></a>
-        </div>
-
-        <div class="buttons-section">
-                <a href="#2" class="vs-anchor"><button class="btn-own btn-own-changeview raised center">O Nas</button></a>
-        </div>
-
-        <div class="buttons-section">
-                <a href="#3" class="vs-anchor"><button class="btn-own btn-own-changeview raised center">Usługi</button></a>
-        </div>
+        
 </div>
 
 
@@ -49,20 +52,38 @@
         <div vs-anchor="1" class="mainview container white ">
 
                 <video autoplay muted loop id="myVideo">
-                        <source src="./img/forest.mp4" type="video/mp4">
+                        <source src="./img/cookie.mp4" type="video/mp4">
                 </video>
-                <div class="inner-container">
-                        <h1>This is a place for a welcome page</h1>
-                        <p>This needs further styling. This page should be an eyecatcher. Something that will drag attention. 
-                                Background video is optional but can be added if will help to achieve the goal </p>
-                        <p>Left navigation will be improved and js driven. Need to consider if this should occupy it's own container
-                                or should be placed on top of current view </p>
-                        <p>We need to think where to put logo, I was thinking about the fixed position left,top, above the navigation </p>
+                <div class="scontainer">
+                        <div class="sheader">
+                                <div class="sheader__text">
+                                                This is a place for a welcome page 
+                                </div>
+                                <div class="sheader__description text-black">
+                                                This needs further styling. This page should be an eyecatcher. Something that will drag attention. 
+                                Background video is optional but can be added if will help to achieve the goal
+                                </div>        
+                        </div>
+
+                        <div class="scontent">
+                                        <div class="scontent__text text-black">
+                                                        This needs further styling. This page should be an eyecatcher. Something that will drag attention. 
+                                                        Background video is optional but can be added if will help to achieve the goal
+                                        </div>
+                                        <div class="scontent__text text-black">
+                                                        Left navigation will be improved and js driven. Need to consider if this should occupy it's own container
+                                or should be placed on top of current view
+                                        </div>
+                                        <div class="scontent__text text-black">
+                                                        We need to think where to put logo, I was thinking about the fixed position left,top, above the navigation
+                                        </div>
+                                </div>
+
 
                 </div>
         </div>
 
-        <div vs-anchor="2" class="mainview container white ">
+        <div vs-anchor="2" class="mainview container  ">
                         <div class="vs-center-wrap">
                                 <div class="vs-center">
                                         <div class="pos">
@@ -75,30 +96,59 @@
                         </div>
 
                         <div class="subbag">
-                                <div vs-anchor="about1" class="subview white">
+                                <div vs-anchor="about1" class="subview background">
+                                        <div class="scontainer">
                                         <div class="sheader">
-                                                <div class="header__text text-black">
-                                                        About us first page placeholder
+                                                <div class="sheader__text text-black">
+                                                        O nas
                                                 </div>
-                                                <div class="header__description text-black">
-                                                        I was thinking about putting some people images here like on this example + some text, probably similar to what they have on the current page. There are two company owners.
-                                                        We could put one on the left second on the right and the text on the middle.
+                                                <div class="sheader__description">
+                                                                Twórcy dobrego projektu
                                                 </div>
-                                        
                                         </div>
-                                        <img class="about-person" src="./img/one-person-company.png" alt="">
+                                        <div class="scontent">
+                                                <div class="scontent__text text-black">
+                                                                Aby nazwać się twórcą dobrego projektu trzeba się w dzisiejszych czasach trochę postarać. Mam tu na myśli projekt graficzny jak również projekt reklamowy w szerszym tego słowa znaczeniu.
+                                                </div>
+                                                <div class="scontent__text text-black">
+                                                                „Projekt” czy też „reklama” to teraz cała wizja i całościowa koncepcja, 
+                                                                która ma na celu sprzedaż lub promocję danego produktu. Potrzeba tu zespołu kreatywnych ludzi 
+                                                                bo współczesny klient jest już dobrze zorientowany w tym czego oczekuje i jaki chce osiągnąć cel. 
+                                                                Nie łatwo zadowolić dzisiejszego konsumenta. Zwykły slogan reklamowy na bilbordzie typu „Ojciec prać” 
+                                                                już nie wystarczy. Współczesny projekt musi być zaskakujący i często działa podprogowo i wręcz trzeba na niego spojrzeć szerzej 
+                                                                aby zrozumieć przesłanie autora.
+                                                </div>
+                                                <div class="scontent__text text-black">
+                                                                Chciałoby się powiedzieć … Jesteśmy COOKIE PRINTERS. Jesteśmy z pasji dla tworzenia. Jesteśmy dla tworzenia z pasją. 
+                                                                Nasze realizacje doceniło już szerokie grono naszych klientów. Zaufali nam i zostali. Dlaczego?
+                                                </div>
+                                                <div class="scontent__text text-black">
+                                                                <q>Jakość pamięta się o wiele dłużej niż cenę</q>  cyt. Gucci
+                                                </div>
+
+                                                <div class="scontent__text text-black">
+                                                                To prawda! Nigdy nie podpisałbym się własnym nazwiskiem pod produktem, który nie ma w sobie tego, co jest najlepsze we mnie
+                                                </div>
+                                        </div>
+                                        </div>
+                                        <img class="about-person right-person" src="./img/one-person-company-r.png" alt="">
+                                        <img class="about-person left-person" src="./img/one-person-company-l.png" alt="">
+
                                 </div>
 
-                                <div vs-anchor="about2" class="subview white">
+                                <div vs-anchor="about2" class="subview background">
+                                                <div class="scontainer">
                                                 <div class="sheader">
-                                                        <div class="header__text text-black">
-                                                                About us second page placeholder
+                                                        <div class="sheader__text text-black">
+                                                                Piszą o nas
                                                         </div>
-                                                        <div class="header__description text-black">
-                                                                here we would put "They write about us" + some references to the articles published about them
+                                                        <div class="sheader__description text-black">
+                                                                Zobacz co o nas piszą!
                                                         </div>
+
                                                 
                                                 </div>
+                                        </div>
         
                                 </div>
                         </div>
@@ -118,42 +168,130 @@
                         </div>
 
                         <div class="subbag">
-                                <div vs-anchor="services1" class="subview white">
-                                        <div class="sheader">
-                                                <div class="header__text text-black">
-                                                                Services page 1 placeholder - EVENT SERVICES
+                                <div vs-anchor="services1" class="subview ">
+                                                <video autoplay muted loop id="myVideo">
+                                                                <source src="./img/crowd.mp4" type="video/mp4">
+                                                        </video>
+                                        <div class="scontainer">
+                                                <div class="sheader">
+                                                        <div class="sheader__text text-black">
+                                                                        Event Services
+                                                        </div>
+                                                        <div class="sheader__description text-black">
+                                                                Sukces wydarzenia zależy w dużej mierze od sposobu zaprojektowania przestrzeni … 
+                                                        </div>
                                                 </div>
-                                                <div class="header__description text-black">
-                                                        First services page, they have 3 of them. Here we put Event service. We need to include some text and I think about putting here some kind of slider or gallery that
-                                                        would show some recent event photos 
+                                                        <div class="scontent">
+                                                <div class="scontent__text text-black">
+                                                                Aby nazwać się twórcą dobrego projektu trzeba się w dzisiejszych czasach trochę postarać. Mam tu na myśli projekt graficzny jak również projekt reklamowy w szerszym tego słowa znaczeniu.
                                                 </div>
-                                        
+                                                <div class="scontent__text text-black">
+                                                        Estetyczny i niebanalny wygląd otoczenia, w którym się znajdujemy jest jednym z decydujących czynników składających 
+                                                        się na doświadczenie komfortu, luksusu, ekskluzywności i przynależności do grupy społecznej o wyjątkowym statusie. 
+                                                        Dlatego też część graczy na rynku zdecydowała się na wykorzystanie tego mechanizmu w swoich strategiach marketingowych. 
+                                                        Inwestowanie w design komunikacji, design produktów czy design logistyki stało się dla nich kluczem do zwiększenia udziałów w rynku 
+                                                        i zdystansowania konkurencji.
+                                                </div>
+                                                <div class="scontent__text text-black">
+                                                        Badania naukowe dowodzą, że design kształtuje ludzką świadomość, wpływając równocześnie na to, co ukryte w podświadomości – 
+                                                        na stłumione pragnienia. Stąd stosując oryginalny, światowy design najwyższej klasy, dyskretnie wpływamy na gości eventu stymulując 
+                                                        w ich psychice nowe potrzeby. One z kolei oddziałują między innymi na kulturę organizacji pracy w firmie, której poziom przekłada się 
+                                                        na wymierny ekonomiczny zysk. Tym samym inwestowanie w design posiada bezpośrednie przełożenie na długofalowy rozwój potencjału zasobów 
+                                                        ludzkich w firmie
+                                                </div>
+                                                <div class="scontent__text text-black">
+                                                        Nasz park maszynowy pozwala na produkcje i realizację każdego pomysłu a doświadczony zespół gwarantuje wysoką jakość produktu końcowego _na ASAP
+                                                </div>
+
+                                                
+                                        </div>
+                                                
+                                                
                                         </div>
                                 </div>
 
-                                <div vs-anchor="services2" class="subview white">
+                                <div vs-anchor="services2" class="subview">
+                                                <video autoplay muted loop id="myVideo">
+                                                                <source src="./img/cookie.mp4" type="video/mp4">
+                                                        </video>
+                                                <div class="scontainer">
                                                 <div class="sheader">
-                                                        <div class="header__text text-black">
-                                                                Services page 2 placeholder - PRINTING
+                                                        <div class="sheader__text text-black">
+                                                                DRUK I POLIGRAFIA
                                                         </div>
-                                                        <div class="header__description text-black">
-                                                                As previous, maybe not a slider or gallery but some example projects as images put on the page. Alternativly we can show working machine as a beckground image.
+                                                        <div class="sheader__description text-black">
+                                                                Jesteśmy rzemieślnikami
+                                                        </div>
+                                                </div>
+                                                        <div class="scontent">
+                                                                <div class="scontent__text text-black">
+                                                                        Może to mało nowoczesne ale tak właśnie o sobie mówimy i tak chcielibyśmy być postrzegani.  Nowoczesne rzemiosło to wiedza, tradycja i perfekcja.
+                                                                         Jesteśmy jak pomost pomiędzy starym warsztatem a nowoczesnymi rozwiązaniami technologicznymi.
+                                                                </div>
+                                                                <div class="scontent__text text-black">
+                                                                        My to nasz warsztat. My to manufaktura w nowoczesnym wydaniu tworząca małe arcydzieła w każdym formacie. 
+                                                                        W pracowni kładziemy wielki nacisk na właściwe przygotowanie i przeprowadzenie procesu druku. 
+                                                                        Dysponujemy nowoczesnym warsztatem który daje nam ogromne możliwości realizacji najbardziej niestworzonych pomysłów. 
+                                                                        Oferujemy druk wysokiej jakości oraz praktycznie wszystkie rodzaje opraw. Specjalizujemy się w druku różnego rodzaju materiałów 
+                                                                        spersonalizowanych.
+                                                                </div>
+                                                                <div class="scontent__text text-black">
+                                                                        asz Park maszynowy to nowoczesne systemy druku cyfrowego Konica Minolta bizhub PRESS wraz z innowacyjnymi urządzeniami introligatorskimi co zdecydowanie przyspiesza cały proces produkcyjny
+                                                                </div>
+                                                                <div class="scontent__text text-black">
+                                                                        Tu dać link do informacji i porad, zastanowić się jak to rozwiązać żeby się nie gryzło z ogólnym UX
+                                                                </div>
+                
+                                                                
                                                         </div>
                                                 
                                                 </div>
-        
-                                </div>
-                                <div vs-anchor="services3" class="subview white">
-                                                <div class="sheader">
-                                                        <div class="header__text text-black">
-                                                                        Services page 3 placeholder - ADVERTISEMENT
-                                                        </div>
-                                                        <div class="header__description text-black">
-                                                                Again some text + images on the page. If we show the printing machine on the previous page we could use some example adverts they produced on this page
-                                                        </div>
+                                        </div>
+                                
+                                <div vs-anchor="services3" class="subview">
                                                 
+                                        <div class="scontainer ">
+                                                
+                                        <div class="sheader">
+                                                        <div class="sheader__text text-black">
+                                                                REKLAMA I IDENTYFIKACJA
+                                                        </div>
                                                 </div>
-        
+                                                        <div class="scontent">
+                                                                <div class="scontent__text text-black">
+                                                                        Dobra reklama oparta jest na inteligencji i sprycie. Trzeba stworzyć piękny obraz, 
+                                                                        wykorzystać otaczającą przestrzeń i jednym zdaniem przekazać całą ideę.
+                                                                </div>
+                                                                <div class="scontent__text text-black">
+                                                                        Jeśli te warunki są spełnione, nierzadko reklamy drukowane stają się pewną formą 
+                                                                        sztuki, artyzmu i w pełni realizują swoje główne zadania, czyli przykucie uwagi, 
+                                                                        zaintrygowanie i przekazanie informacji, idei, wartości.
+                                                                </div>
+                                                                <div class="scontent__text text-black">
+                                                                        Naszym warsztatem jest doświadczenie. Jesteśmy pewni siebie bo poznaliśmy magię reklamy drukowanej 
+                                                                        a talent naszego zespołu gwarantuje świetne kreacje. Będzie zarówno śmiesznie, jak i poważnie, bo koncepcje 
+                                                                        do przekazania są różne i wymagają indywidualnego podejścia.
+                                                                </div>
+                                                                <div class="scontent__text text-black">
+                                                                        Na początku roku 2018 postawiliśmy naszego „potworka” a mianowicie ploter stołowy Summa F2630. 
+                                                                        Umożliwia on obróbkę zdecydowanej większości materiałów dostępnych na rynku reklamy. Dostępna 
+                                                                        gama narzędzi sprosta takim mediom jak tworzywa sztuczne (płyty HIPS, PVC, akryl, plexi, PP czy PET), 
+                                                                        materiały spienione, pianki, gumy, tapety, canvas, papier, drewno, tektura lita i falista, dibond i wiele innych. 
+                                                                        Co więcej, mamy możliwość wykonania najprostszych prac, takich jak cięcie folii do podkładu z charakterystyczną dla 
+                                                                        ploterów Summa dokładnością. Inne cechy maszyny to chociażby sterowanie funkcjami urządzenia z pilota Bluetooth czy 
+                                                                        utomatyczna kalibracja – nie tylko pozycji zero noża, ale również pomiaru szerokości, długości i grubości ostrza, co sprawia, 
+                                                                        że nawet najtrudniejsze materiały zostaną wycięte z największą precyzją
+                                                                </div>
+                
+                                                                
+                                                        </div>
+                                                        
+                                                
+                                                
+                                        </div>     
+                                        <video autoplay muted loop id="myVideo">
+                                                        <source src="./img/piccadily2.mp4" type="video/mp4">
+                                                </video>   
                                 </div>
                         </div>
         </div>
@@ -171,41 +309,73 @@
                                 </div>
         
                                 <div class="subbag">
-                                        <div vs-anchor="protfolio1" class="subview white">
+                                        <div vs-anchor="protfolio1" class="subview background">
+                                                <div class="scontainer">
                                                 <div class="sheader">
-                                                        <div class="header__text text-black">
+                                                        <div class="sheader__text text-black">
                                                                         Some example projects, short text + gallery, slider, images
                                                         </div>
-                                                        <div class="header__description text-black">
+                                                        <div class="sheader__description text-black">
                                                                 We can put some example projects they did. A little bit more the in the offer section. We can put some videos from the events(if available), some galleries (like on their facebook), maybe in slider
                                                         </div>
                                                 
                                                 </div>
+                                                <div class="scontent">
+                                                                <div class="carousel" data-slick='{"slidesToShow": 4,
+                                                                                                   "slidesToScroll": 4,
+                                                                                                   "autoplay": true}'>
+                                                                                <div><h3>1</h3></div>
+                                                                                <div><h3>2</h3></div>
+                                                                                <div><h3>3</h3></div>
+                                                                                <div><h3>4</h3></div>
+                                                                                <div><h3>5</h3></div>
+                                                                                <div><h3>6</h3></div>
+                                                                              </div>   
+                                                </div>
+                                                </div>
                                         </div>
         
-                                        <div vs-anchor="protfolio2" class="subview white">
-                                                        <div class="sheader">
-                                                                <div class="header__text text-black">
+                                        <div vs-anchor="protfolio2" class="subview background">
+                                                <div class="scontainer">
+                                                <div class="sheader">
+                                                                <div class="sheader__text text-black">
                                                                                 Some example projects, short text + gallery, slider, images
                                                                 </div>
-                                                                <div class="header__description text-black">
-                                                                                We can put some example projects they did. A little bit more the in the offer section. We can put some videos from the events(if available), some galleries (like on their facebook), maybe in slider
+                                                                <div class="sheader__description text-black">
+                                                                                
                                                                 </div>
                                                         
                                                         </div>
+                                                        <div class="scontent">
+                                                                        <div class="carousel" data-slick='{"slidesToShow": 1,
+                                                                        "slidesToScroll": 1,
+                                                                        "autoplay": true,
+                                                                        "autoplaySpeed": 3000,
+                                                                        "arrows": false,
+                                                                        "fade": true}'>
+                                                     <div><img class="event-image" src="./img/e1.jpg" alt="event1"></div>
+                                                     <div><img class="event-image" src="./img/e2.jpg" alt="event1"></div>
+                                                     <div><img class="event-image" src="./img/e3.jpg" alt="event1"></div>
+                                                     <div><img class="event-image" src="./img/e1.jpg" alt="event1"></div>
+                                                     <div><img class="event-image" src="./img/e2.jpg" alt="event1"></div>
+                                                     <div><img class="event-image" src="./img/e3.jpg" alt="event1"></div>
+                                                   </div> 
+                                                        </div>
+                                                </div>        
                 
                                         </div>
-                                        <div vs-anchor="protfolio3" class="subview white">
+                                        <div vs-anchor="protfolio3" class="subview background">
+                                                <div class="scontainer">
                                                         <div class="sheader">
-                                                                <div class="header__text text-black">
+                                                                <div class="sheader__text text-black">
                                                                                 Some example projects, short text + gallery, slider, images
                                                                 </div>
-                                                                <div class="header__description text-black">
+                                                                <div class="sheader__description text-black">
                                                                                 We can put some example projects they did. A little bit more the in the offer section. We can put some videos from the events(if available), some galleries (like on their facebook), maybe in slider
                                                                 </div>
                                                         
                                                         </div>
-                
+                                                </div>
                                         </div>
                                 </div>
 
@@ -230,7 +400,9 @@
 <script src="./viewscroller/jquery-3.1.0.min.js"></script>
 <script src="./viewscroller/jquery.easing.min.js"></script>
 <script src="./viewscroller/jquery.mousewheel.min.js"></script>
+<script src="./node_modules/slick-carousel/slick/slick.js"></script>
 <script src="./viewscroller/viewScroller.js"></script>
+
 <script src="script.js"></script>
 
 
